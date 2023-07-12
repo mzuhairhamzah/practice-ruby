@@ -42,3 +42,50 @@ RUby mengevaluasi ekspresi secara "lazy". Artinya :
 1. -Ruby tidak selalu mengevaluasi keseluruhan ekspresi, ia mengevaluasi bagian dari ekspresi yang dirasa cukup untuk mengembalikan sebuah nilai
 2. Ruby mengembalikan nilai dari sebuah ekspresi tanpa harus mengevaluasi keselurhan ekspresi tersebut
 
+## Conditional dengan if-else
+if condition
+# do something when condition is true
+
+else
+# do another thing when condition is false
+
+end
+
+if condition_1
+# do something when condition_1 is true
+
+elsif condition_2
+# do another thing when condition_2 is 
+else
+# do another thing when condition_1 and condition_2 is false
+
+end
+
+## Conditional dengan unless
+kerangka :
+unless condition
+# do something when condition is false
+end
+
+# inline form
+do_something unless condition
+
+unless condition
+# do something when condition is false
+else 
+# do something when condition is true
+end
+
+case expression_1
+when expression_2
+# do something when expression_1 === expression_2
+when expression_3
+# do something when expression_1 === expression_3
+else
+# do something when expression_1 does not match any
+end
+
+## Conditional dengan ternary operator
+condition ? code_1 : code 2
+# code_1 is executed if condition is true
+# code_2 is executed if condition is false
