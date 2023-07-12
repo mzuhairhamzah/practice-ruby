@@ -18,10 +18,27 @@ Ketika membuat program, seringkali kita membuat abstraksi terhadap hal-hal yang 
 { 
 club = "Juventus"
 scudetti = 38
-is_awesome = true 
+is_awesome = true  
 }
 ```
 ## Karakteristik Variabel
 1. Tidak perlu deklarasi
 2. Right side first
 3. Dynamic data type
+
+
+## Truthy dan Falsey
+
+DI beberapa bahasa pemrograman, kita bisa mengevaluasi data non boolean dalam konteks boolean. Untuk itu, di beberapa bahasa pemrograman dikenal konsep bernama truthy dan falsey.
+
+Truthy : nilai non boolean yang dievaluasi sebagai true.
+Falsey : nilai non boolean yang dievaluasi sebagai false.
+
+Implementasi trhuty dan falsey berbeda dari satu bahasa pemrograman ke bahasa pemrograman lainnya. Di JavaScript, misalnya 0 dan "" dievaluasi sebagai falsey. Di python, [] dan {}
+di evaluasi sebagai falsey
+
+## Lazy Evaluation == short circuit evaluation
+RUby mengevaluasi ekspresi secara "lazy". Artinya :
+1. -Ruby tidak selalu mengevaluasi keseluruhan ekspresi, ia mengevaluasi bagian dari ekspresi yang dirasa cukup untuk mengembalikan sebuah nilai
+2. Ruby mengembalikan nilai dari sebuah ekspresi tanpa harus mengevaluasi keselurhan ekspresi tersebut
+
